@@ -7,8 +7,7 @@ Created on 2017年3月29日
 '''
 import xlsxwriter
 import time
-import TestAllRunner
-
+from core import TestAllRunner
 
 TestReport = TestAllRunner.hthreads()#调用测试结果
 

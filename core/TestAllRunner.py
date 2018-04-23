@@ -6,12 +6,12 @@ Created on 2017年3月31日
 @author: Jin
 '''
 import threading    #导入多线程库
-import TestCassRunner
+from run import run
 
 
 def hthreads():
     threads = []    #创建线程数组
-    h1 = threading.Thread(target=TestCassRunner.HRunner)   #定义线程
+    h1 = threading.Thread(target=run.HRunner)   #定义线程
     threads.append(h1)      #添加线程到数组
 #     h2 = threading.Thread(target=TestCassRunner.HRunner)   #定义线程
 #     threads.append(h2)      #添加线程到数组
@@ -22,7 +22,7 @@ def hthreads():
             
     h.join()    #把主线程挂起，等待上面的线程跑完了再运行
     
-    AllTestReportData = TestCassRunner.hhlist
+    AllTestReportData = run.hhlist
         
 #     print(AllTestReportData)
    

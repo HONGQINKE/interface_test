@@ -85,6 +85,8 @@ celerybeat-schedule
 # virtualenv
 .venv
 venv/
+venv1/
+venv2/
 ENV/
 
 # Spyder project settings
@@ -99,3 +101,6 @@ ENV/
 
 # mypy
 .mypy_cache/
+.idea/
+.idea/vcs.xml
+.xls#

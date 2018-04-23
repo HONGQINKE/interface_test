@@ -1,10 +1,4 @@
-# -*- coding:utf-8 -*-  
-
-'''
-Created on 2017年3月30日
-
-@author: Jin
-'''
+# -*- coding:utf-8 -*-
 import re     
 f = open("C:\\Users\\admin\\Desktop\\daima.txt","r") #打开这个XX路径下的XX.txt文件并读取
 zhPattern = re.compile(u'[\u4e00-\u9fa5]+') #调取判断中文的函数
